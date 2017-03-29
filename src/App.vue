@@ -5,6 +5,7 @@
     <router-link to='/'>首页</router-link><br/>
     <router-link to='/Watch'>Watch</router-link><br/>
     <router-link to='/VueAllProperty'>Vue实例，列出了所有属性写法</router-link><br/>
+    <router-link to='/Countdown'>倒计时：x小时x分x秒</router-link><br/>
     <router-view></router-view>
   </div>
 </template>
