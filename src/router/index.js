@@ -4,6 +4,8 @@ import Hello from '../components/Hello'
 import Watch from '../components/Watch'
 import VueAllProperty from '../components/VueAllProperty'
 import Countdown from '../components/Countdown'
+import Parent from '../components/Parent'
+import Child from '../components/Child'
 
 Vue.use(Router)
 
@@ -28,6 +30,17 @@ export default new Router({
       path: '/Countdown',
       name: 'Countdown',
       component: Countdown
+    },
+    {
+      path: '/parent_child',
+      name: 'parent_child',
+      component: Parent,
+      children: [
+          {
+            path: '',
+            component: Child
+          }
+      ]
     }
   ]
 })
