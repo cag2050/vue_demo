@@ -7,15 +7,15 @@
 
 <script>
 export default {
-  name: 'hello',
-  data () {
-    return {
+    name: 'hello',
+    data () {
+        return {
+
+        }
+    },
+    watch: {
 
     }
-  },
-  watch: {
-
-  }
 }
 </script>
 

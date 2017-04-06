@@ -7,21 +7,21 @@
 
 <script>
 export default {
-  name: 'hello',
-  props: {
-    message: String
-  },
-  data () {
-    return {
+    name: 'hello',
+    props: {
+        message: String
+    },
+    data () {
+        return {
 
+        }
+    },
+    computed: {
+        logMessage () {
+            console.log(this.message)
+            return this.message.split('').reverse().join('')
+        }
     }
-  },
-  computed: {
-    logMessage () {
-        console.log(this.message)
-        return this.message.split('').reverse().join('')
-    }
-  }
 }
 </script>
 
