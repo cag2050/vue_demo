@@ -6,6 +6,7 @@ import VueAllProperty from '../components/VueAllProperty'
 import Countdown from '../components/Countdown'
 import Parent from '../components/Parent'
 import Child from '../components/Child'
+import RegExp from '../components/RegExp'
 
 Vue.use(Router)
 
@@ -41,6 +42,11 @@ export default new Router({
             component: Child
           }
       ]
+    },
+    {
+      path: '/regexp',
+      name: 'RegExp',
+      component: RegExp
     }
   ]
 })
